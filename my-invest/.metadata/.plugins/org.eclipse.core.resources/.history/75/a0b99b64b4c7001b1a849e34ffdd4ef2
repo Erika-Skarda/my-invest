@@ -1,0 +1,5 @@
+package com.erikaskarda.myinvest.resources;
+
+public class CategoriaResource {
+
+}

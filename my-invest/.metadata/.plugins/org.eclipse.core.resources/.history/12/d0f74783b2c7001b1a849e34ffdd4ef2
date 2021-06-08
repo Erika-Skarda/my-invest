@@ -1,0 +1,30 @@
+package com.erikaskarda.myinvest.resources;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.erikaskarda.myinvest.domain.Investimento;
+import com.erikaskarda.myinvest.repository.InvestimentoRepository;
+
+@RestController
+@RequestMapping("/investimentos")
+public class InvestimentoResource {
+	
+	@Autowired
+	private InvestimentoRepository investimentoRepository;
+	 
+	@GetMapping
+	public List<Investimento> listarTodos(){
+		return investimentoRepository.findAll();
+	}
+	
+	@GetMapping("/{codigo}")
+	public Investimento buscarPeloCodigo(@PathVariable Long codigo) {
+		return investimentoRepository.findById(codigo).orElse(null);	
+	}
+}
