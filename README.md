@@ -64,12 +64,12 @@ Aplicação desenvolvida na Fullstack Week 2.0 promovida por [Larissa Falcão](h
 
 No terminal, clone o projeto: 
 
-<p>Frontend</p>
-
 ```
 git clone https://github.com/Erika-Skarda/my-invest
 
 ```
+<p>Frontend</p>
+
 Acesse a pasta frontend:
 
 ```
