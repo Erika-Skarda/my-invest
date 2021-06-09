@@ -35,12 +35,15 @@ Aplicação desenvolvida na Fullstack Week 2.0 promovida por [Larissa Falcão](h
 
 💰 Pegar investimento com código
 
+### Frontend
 
-## 🎊 Deploy
+<p align="center"><b>Cadastro de Investimento</b></p>
+ 
+![Cadastro](https://github.com/Erika-Skarda/my-invest/blob/main/frontend/src/assets/fullstackweek1.png)
 
-<p align="justify">
-  O deploy do projeto foi realizado no vercel e encontra-se disponível em: 
-</p>
+<p align="center"><b>Lista de Investimentos</b></p>
+ 
+![Listagem](https://github.com/Erika-Skarda/my-invest/blob/main/frontend/src/assets/n/fullstackweek2.png)
 
 ## Como rodar a aplicação :arrow_forward:
 
@@ -79,6 +82,10 @@ git clone https://github.com/Erika-Skarda/my-invest
 :warning: [Spring Tools](https://www.jetbrains.com/idea/download/?gclid=CjwKCAjwqvyFBhB7EiwAER786fqaEzrR0uEbJEpc3_KWj71Wflv1SBHVo4YAjwkQGAWDzwp243zR9hoCEAYQAvD_BwE)
 
 :warning: [PostgresSQL](https://www.postgresql.org/)
+
+:warning: [Node](https://nodejs.org/en/download/)
+
+:warning: [Npm](https://www.npmjs.com/)
 
 ## Desenvolvido Por :octocat:
 
