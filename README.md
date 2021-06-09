@@ -17,9 +17,12 @@ Durante esta **Fullstack Week 2.0** foi desenvolvido <b>My Invest</b>.
 </div>
 
 </br> 
-> Status do Projeto: Em desenvolvimento :heavy_check_mark: 
- 
+> Status do Projeto: Concluído :heavy_check_mark: 
 </br> 
+
+## Documentação
+
+[Postman](https://documenter.getpostman.com/view/15971782/TzeRo9v6)
 
 ## 💻 Projeto
 
