@@ -68,7 +68,18 @@ No terminal, clone o projeto:
 git clone https://github.com/Erika-Skarda/my-invest
 
 ```
+Acesse a pasta frontend:
 
+```
+Entre no projeto e instale as dependências através do comando:
+
+```
+npm install
+```
+Por último, suba a aplicação: 
+```
+npm start
+```
 
 ## Tecnologias usadas: :books:
 
