@@ -68,7 +68,7 @@ No terminal, clone o projeto:
 git clone https://github.com/Erika-Skarda/my-invest
 
 ```
-<p>Frontend</p>
+<b><p>Frontend</p></b>
 
 Acesse a pasta frontend:
 
@@ -86,6 +86,20 @@ Por último, suba a aplicação:
 
 ```
 npm start
+
+```
+<b><p>Backend</p></b>
+
+Acesse a pasta backend(utilizei Eclipse):
+
+```
+cd backend
+
+```
+Para rodar:
+
+```
+Run as Spring App
 
 ```
 
