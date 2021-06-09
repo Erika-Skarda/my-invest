@@ -25,7 +25,7 @@ Durante esta **Fullstack Week 2.0** foi desenvolvido <b>My Invest</b>.
 
 Aplicação desenvolvida na Fullstack Week 2.0 promovida por [Larissa Falcão](https://larissafalcao.com.br/stacklevelup), que controla investimentos pessoais.
 
-### Backend(Funcionalidades):
+## Backend(Funcionalidades):
 
 <h3 align="center"><b>Investimento</b></h3>
 
@@ -47,7 +47,7 @@ Aplicação desenvolvida na Fullstack Week 2.0 promovida por [Larissa Falcão](h
 
 💰 <b>Pegar categoria com código</b>
 
-### Frontend
+## Frontend
 
 <p align="center"><b>Cadastro de Investimento</b></p>
  
