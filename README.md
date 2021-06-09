@@ -27,7 +27,7 @@ Aplicação desenvolvida na Fullstack Week 2.0 promovida por [Larissa Falcão](h
 
 ### Backend(Funcionalidades):
 
-<h1 align="center"><b>Investimento</b></h1>
+<h3 align="center"><b>Investimento</b></h3>
 
 💰 <b>Cadastro de investimento</b>
 
@@ -37,7 +37,7 @@ Aplicação desenvolvida na Fullstack Week 2.0 promovida por [Larissa Falcão](h
 
 💰 <b>Pegar investimento com código</b>
 
-<p align="center"><b>Categoria</b></p>
+<h3 align="center"><b>Categoria</b></h3>
 
 💰 <b>Cadastro de categoria</b>
 
