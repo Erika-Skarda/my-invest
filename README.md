@@ -27,13 +27,25 @@ Aplicação desenvolvida na Fullstack Week 2.0 promovida por [Larissa Falcão](h
 
 ### Backend(Funcionalidades):
 
-💰 Cadastro de investimento
+<p align="center"><b>Investimento</b></p>
 
-💰 Listar todos investimentos
+💰 <b>Cadastro de investimento</b>
 
-💰 Remover investimento
+💰 <b>Listar todos investimentos</b>
 
-💰 Pegar investimento com código
+💰 <b>Remover investimento</b>
+
+💰 <b>Pegar investimento com código</b>
+
+<p align="center"><b>Categoria</b></p>
+
+💰 <b>Cadastro de categoria</b>
+
+💰 <b>Listar todas categorias</b>
+
+💰 <b>Remover categoria</b>
+
+💰 <b>Pegar categoria com código</b>
 
 ### Frontend
 
