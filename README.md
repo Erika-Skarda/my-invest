@@ -5,7 +5,7 @@ Durante esta **Fullstack Week 2.0** foi desenvolvido <b>My Invest</b>.
 </br>   
 
 <div align="center">
-	<img alt="Spring" src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"/>
+ <img alt="Spring" src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"/>
  <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"/>
  <img alt="Postgres" src ="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </div>
@@ -13,16 +13,16 @@ Durante esta **Fullstack Week 2.0** foi desenvolvido <b>My Invest</b>.
 <div align="center">
  <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
  <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
-	<img alt="Ant-Design" src="https://img.shields.io/badge/-AntDesign-%230170FE?style=for-the-badge&logo=ant-design&logoColor=white"/>
+  <img alt="Ant-Design" src="https://img.shields.io/badge/-AntDesign-%230170FE?style=for-the-badge&logo=ant-design&logoColor=white"/>
 </div>
 
 </br> 
 > Status do Projeto: Concluído :heavy_check_mark: 
 </br> 
 
-## Documentação
+## Link da documentação: :book:
 
-[Postman](https://documenter.getpostman.com/view/15971782/TzeRo9v6)
+<b>[Postman](https://documenter.getpostman.com/view/15971782/TzeRo9v6)</b>
 
 ## 💻 Projeto
 
@@ -66,6 +66,7 @@ No terminal, clone o projeto:
 
 ```
 git clone https://github.com/Erika-Skarda/my-invest
+
 ```
 
 
