@@ -43,7 +43,7 @@ Aplicação desenvolvida na Fullstack Week 2.0 promovida por [Larissa Falcão](h
 
 <p align="center"><b>Lista de Investimentos</b></p>
  
-![Listagem](https://github.com/Erika-Skarda/my-invest/blob/main/frontend/src/assets/n/fullstackweek2.png)
+![Listagem](https://github.com/Erika-Skarda/my-invest/blob/main/frontend/src/assets/fullstackweek2.png)
 
 ## Como rodar a aplicação :arrow_forward:
 
