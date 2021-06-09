@@ -11,16 +11,30 @@ import {
     Menu, 
     InputNumber
 } from "antd";
+import InvestimentoService from '../../services/InvestimentoService';
+import CategoriaService from '../../services/CategoriaService';
 
-
-const {Header, Content, Footer} = Layout;
-const {Option} = Select;
+const { Header, Content, Footer } = Layout;
+const { Option } = Select;
 
 export default function CadastrarInvestimento() {
 
   const [categorias, setCategorias] = useState([]);
   const [categoria, setCategoria] = useState(null);
 
+  async function refreshCategorias() {
+    CategoriaService.retrieveAllCategorias()
+      .then(
+        response => {
+          setCategorias(response.data)
+        }
+      )
+  }
+
+  useEffect(() => {
+    refreshCategorias();
+    return() => {}
+  }, [])
 
   const layout = {
     labelCol: {
@@ -38,11 +52,16 @@ export default function CadastrarInvestimento() {
   };
 
   const onFinish = (values) => {
+    InvestimentoService.saveInvestimento(values);
     message.success('Investimento salvo com sucesso 🎊')
   }
 
   const onFinishFailed = (values) => {
     message.danger('Investimento não salvo ☠️💀')
+  }
+
+  function handleChange(value) {
+    setCategoria(value);
   }
 
   return (
@@ -62,8 +81,13 @@ export default function CadastrarInvestimento() {
         <Content style={{ padding: "0 50px" }}>
         <div className="site-layout-content">
             <h2>Cadastrar Investimento</h2>
-            <Form {...layout} name="basic" initialValues={{remember: true,}} onFinish={onFinish} 
-            onFinishFailed={onFinishFailed}>
+            <Form 
+              {...layout} 
+              name="basic" 
+              initialValues={{remember: true,}} 
+              onFinish={onFinish} 
+              onFinishFailed={onFinishFailed}
+            >
               <Form.Item 
                 label="Código do ativo"
                 name="codigoAtivo"
@@ -89,8 +113,8 @@ export default function CadastrarInvestimento() {
                 <InputNumber />
               </Form.Item>
               <Form.Item 
-                label="Quantidade de cotas" 
-                name="quantidadeCota"
+                label="Quantidade de cotas " 
+                name="quantidadeCotas"
                 rules={[
                   {
                     required: true,
@@ -112,7 +136,7 @@ export default function CadastrarInvestimento() {
               >
                 <DatePicker/>
               </Form.Item>
-              {/* <Form.Item 
+              <Form.Item 
                 label="Categoria" 
                 name="categoria"
               >
@@ -125,7 +149,7 @@ export default function CadastrarInvestimento() {
                     )
                   })}
                 </Select>
-              </Form.Item> */}
+              </Form.Item>
               <Form.Item {...tailLayout}>
                 <Button type="primary" htmlType="submit">
                   Salvar
@@ -134,7 +158,7 @@ export default function CadastrarInvestimento() {
             </Form>
         </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>My Invest ©2021 by Daiane Matos</Footer>
+        <Footer style={{ textAlign: "center" }}>My Invest ©2021 Created by Erika Skarda 💰</Footer>
       </Layout>
     </div>
   );

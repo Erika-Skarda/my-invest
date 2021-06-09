@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import 'antd/dist/antd.css';
 import { 
   Table, 
@@ -9,14 +9,30 @@ import {
   Menu,
   Breadcrumb,
 } from 'antd';
+import InvestimentoService from '../../services/InvestimentoService';
 
 const { Header, Content, Footer } = Layout;
 const { Column } = Table;
 
 export default function ListarInvestimentos() {
   const [investimento, setInvestimento] = useState([]);
+  
+  async function refreshInvestimentos() {
+    InvestimentoService.retrieveAllInvestimentos()
+      .then(
+        response => {
+          setInvestimento(response.data)
+        }
+      )
+  }
+
+  useEffect(() => {
+    refreshInvestimentos();
+    return() => {}
+  }, [])
 
   function remove(record) { 
+    InvestimentoService.deleteInvestimento(record.codigo);
     message.success('Investimento removido com sucesso 🎊');
   }
 
@@ -27,12 +43,12 @@ export default function ListarInvestimentos() {
             <div className="logo" />
             <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
               <Menu.Item key="1">
-                <Link to="/cadastrar-investimento">
+                <Link to="/cadastrar">
                   Cadastrar Investimento
                 </Link>
               </Menu.Item>
               <Menu.Item key="2">
-                <Link to="/cadastrar-investimento">
+                <Link to="/cadastrar">
                   Listar Investimento
                 </Link>
               </Menu.Item>
@@ -54,7 +70,7 @@ export default function ListarInvestimentos() {
                 </Column>
                 <Column
                   title="Quantidade de Cotas"
-                  dataIndex="quantidadeCota"
+                  dataIndex="quantidadeCotas"
                   key="quantidadeCota">
                 </Column>
                 <Column
